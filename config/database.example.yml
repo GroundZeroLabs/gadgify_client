@@ -1,0 +1,22 @@
+defaults: &defaults
+  adapter: postgresql
+  username:
+  password:
+  reconnect: true
+  pool: 5
+  wait_timeout: 5
+
+development:
+  database: gadgify_client
+  host: localhost
+  <<: *defaults
+
+test:
+  database: gadgify_client_test
+  host: localhost
+  <<: *defaults
+
+production:
+  database: gadgify_client_prod
+  host: localhost
+  <<: *defaults

@@ -10,4 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap.min
+ *= requrie bootstrap-responsive
+ *= require footer
+ *= require social
  */
